@@ -1,0 +1,81 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #ffffff url(../ubergallery/images/html.png) repeat-x scroll left top;
+}
+
+body {
+  margin: 5px auto;
+  background: transparent url(../ubergallery/images/body.png) repeat-y scroll 100% 50%;
+  font-family: arial,sans-serif;
+  /*width: 1000px;*/
+  color: #888888;
+  font-size: 12px;
+  position: relative;
+}
+
+a {
+  img {
+    border: 1px solid #cccccc;
+  }
+  color: #94aebb;
+  text-decoration: none;
+  &:hover {
+    visibility: visible;
+    img {
+      border: 1px solid #729ad7;
+    }
+  }
+}
+
+.page {
+  padding: 5px 125px 0 115px;
+  background: transparent url(../ubergallery/images/page.jpg) no-repeat scroll left top;
+  width: 760px;
+  margin: 0 auto;
+}
+
+.topmenu {
+  padding: 35px 27px 0 0;
+  background: transparent url(../ubergallery/images/topmenu.png) no-repeat scroll left top;
+  height: 10px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.page > .topmenu {
+  min-height: 50px;
+  height: auto;
+}
+
+.topmenu li {
+  display: inline;
+  text-align: center;
+  a {
+    background: #a3bde5 url(../ubergallery/images/roll.png) no-repeat scroll center top;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+    width: 176px;
+    text-align: center;
+    float: right;
+    height: 50px;
+    color: #1919ff;
+    padding-top: 9px;
+    &:hover {
+      background: #83a6dc url(../ubergallery/images/rollhover.png) no-repeat scroll 0 -27px;
+    }
+  }
+  > a {
+    height: auto;
+  }
+}
+
+@import "minima";
